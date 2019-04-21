@@ -25,8 +25,8 @@ const ServerlessCacheManager = class ServerlessCacheManager{
      * const has = await ServerlessCacheManager.has("doniayape");
      * console.log("Result: ", has); //Result: true|false
     */
-    has(key){
-        const val = this.localC["cache_"+key] ? this.localC["cache_"+key] : process.env["cache_"+key];
+    async has(key){
+        const val = await this.getValue(key);
         return val !== undefined;
     };
     /**

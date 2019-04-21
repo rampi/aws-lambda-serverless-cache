@@ -44,10 +44,10 @@ describe('Serverless cache test suite', ()=>{
         const serverlessCache = new AWSLambdaServerlessCacheManager({
             functionName: "test-function"
         });
-        let has = serverlessCache.has("myKey");
+        let has = await serverlessCache.has("myKey");        
         expect(has).to.be.eql(false);
         await serverlessCache.putValue("myKey", "myValue");
-        has = serverlessCache.has("myKey");
+        has = await serverlessCache.has("myKey");
         expect(has).to.be.eql(true);        
     });
     it("Test putValue(\"myKey2\", \"myValue2\", 50000) with TTL", async ()=>{
