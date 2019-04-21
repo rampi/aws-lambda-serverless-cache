@@ -1,0 +1,25 @@
+{
+  "name": "aws-lambda-serverless-cache",
+  "version": "1.0.0",
+  "description": "Library that allows to a lambda function create key/value entries in process.env, working as a serverless cache.",
+  "main": "index.js",
+  "devDependencies": {
+    "aws-sdk-mock": "^4.4.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "cache",
+    "serverless"
+  ],
+  "scripts": {
+    "test": "ENV=test mocha --exit test/*.test.js"
+  },
+  "author": "rmesino",
+  "license": "ISC",
+  "optionalDependencies": {
+    "aws-sdk": "^2.441.0"
+  }
+}

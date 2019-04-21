@@ -1,0 +1,1 @@
+exports.AWSLambdaServerlessCacheManager = require("./ServerlessCacheManager").ServerlessCacheManager;
