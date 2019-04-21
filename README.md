@@ -1,5 +1,5 @@
 ## AWS Lambda Serverless Cache
-This module allows use process.env as cache with option of set ttl by key, this allows use a fast read cache in lambda functions. 
+This module allows use AWS Lambda Environment Variables as cache with option of set ttl by key, this allows use a fast read cache in lambda functions. 
 
 All k/v pairs will be setted as Environment, and will have the form:
 * cache_key
