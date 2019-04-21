@@ -8,7 +8,7 @@ All k/v pairs will be setted as Environment, and will have the form:
 ### Example:
 ![EnvVars](./envvars.png)
 
-Every time that a key is getting from cache, then their TTL is validated and key can be removed if TTL is fulfilled.
+Every time that a key is getting from cache their TTL is validated and key could be removed if TTL is fulfilled.
 
 <a name="ServerlessCacheManager"></a>
 
