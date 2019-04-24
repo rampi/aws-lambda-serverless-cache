@@ -95,7 +95,7 @@ const ServerlessCacheManager = class ServerlessCacheManager{
      * );
      */
     async putValue(key, value, options){
-        this.localC["cache_"+key] = value;
+        this.localC["cache_"+key] = value;        
         let current = await this.lambda.getFunctionConfiguration({FunctionName: this.funcName}).promise();
         if( options && options.ttl ){
             this.localC["cache_ttl_"+key] = (new Date().getTime())+":"+options.ttl;
